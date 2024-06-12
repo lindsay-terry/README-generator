@@ -80,6 +80,7 @@ ${data.description}
 * [Usage](#Usage)
 * [License](#License)
 * [Contributing](#Contributing)
+* [Credits](#Credits)
 * [Tests](#Tests)
 * [Questions](#Questions)
 

@@ -72,10 +72,10 @@ const questions = [
     {
         type: 'input',
         name: 'dependencies',
-        message: 'What command is needed to install dependencies?',
+        message: 'Instructions to install dependencies?',
         validate: function(input) {
             if (!input) {
-                return 'Please enter the command to install dependencies or write N/A.'
+                return 'Please enter instructions to install dependencies or write N/A.'
             }
             return true;
         }
@@ -84,10 +84,10 @@ const questions = [
     {
         type: 'input',
         name: 'tests',
-        message: 'What command is needed to run tests?',
+        message: 'Instructions needed to run tests?',
         validate: function(input) {
             if (!input) {
-                return 'Please enter the command to run tests or write N/A'
+                return 'Please enter the instructions to run tests or write N/A'
             }
             return true;
         }
@@ -96,7 +96,7 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'What does the user need to know about the project?',
+        message: 'What does the user need to know about using the project?',
         validate: function(input) {
             if (!input) {
                 return 'Please enter usage information about your project.'
