@@ -76,13 +76,13 @@ ${renderLicenseBadge(data.license)}
 ${data.description}
 
 ## Table of Contents
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Credits](#Credits)
-* [Tests](#Tests)
-* [Questions](#Questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Credits](#credits)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 Installation instructions for application:
@@ -90,9 +90,6 @@ ${data.dependencies}
 
 ## Usage
 ${data.usage}
-
-[link](to deployed application - url here)
-![alt text for screenshot](link to screenshot here)
 
 ## License
 ${renderLicenseSection(data.license)}

@@ -24,7 +24,8 @@ To use this project, make sure you have node installed and the repo cloned or fo
 
 [link](to deployed application - url here)
 
-![Screenshot of application running in console](./utils/images/readme-screenshot.png)
+![Screenshot of application running in console](./assets/images/readme-screenshot.png)
+![Screenshot of generated README](./assets/images/example-readme.png)
 
 ## License
 This project is operating under the MIT license.  For more detailed information, please click [here](https://opensource.org/license/mit).
