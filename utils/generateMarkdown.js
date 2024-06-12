@@ -16,7 +16,7 @@ function renderLicenseBadge(license) {
       licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
       break;
 
-    case 'BSD 3':
+    case 'BSD 3-Clause':
       licenseBadge = '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
       break;
 
@@ -29,16 +29,48 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  let licenseLink;
+
+  switch (license) {
+  case 'MIT':
+    licenseLink = 'https://opensource.org/license/mit';
+    break;
+
+  case 'APACHE 2.0':
+    licenseLink = 'https://opensource.org/license/apache-2-0';
+    break;
+
+  case 'GPL 3.0':
+    licenseLink = 'https://www.gnu.org/licenses/gpl-3.0.en.html';
+    break;
+
+  case 'BSD 3-Clause':
+    licenseLink = 'https://opensource.org/licenses/BSD-3-Clause';
+    break;
+
+  case 'None':
+    licenseLink = '';
+    break;  
+ }
+ return licenseLink;
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  if (license === 'None') {
+    return `No license is in use at this time`
+  } else {
+    return `This project is operating under the ${license} license.  For more detailed information, please click [here](${renderLicenseLink(license)}).`
+  } 
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 return `
 # ${data.projectName}
+${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
@@ -58,15 +90,20 @@ Please use ${data.dependencies} to install dependencies.
 ${data.usage}
 
 ## License
-${renderLicenseBadge(data.license)}
+${renderLicenseSection(data.license)}
 
 ## Contributing
 ${data.contributions}
 
+## Credits
+${data.credits}
+
 ## Tests
-${data.tests}
+Please use ${data.tests} to run tests.
 
 ## Questions
+Contact me for any questions regarding this project:
+
 GitHub: [${data.username}](https://github.com/${data.username})
 
 Email: ${data.email}

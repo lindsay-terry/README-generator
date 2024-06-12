@@ -59,9 +59,9 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What kind of license does your project need?',
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3-Clause', 'None'],
         validate: function(input) {
-            if (!['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'].includes(input)) {
+            if (!['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3-Clause', 'None'].includes(input)) {
                 return 'Please select a valid license option'
             }
             return true;
@@ -115,6 +115,18 @@ const questions = [
             return true;
         }
     },
+
+    {
+        type: 'input',
+        name: 'credits',
+        message: 'Add any credits and acknowledgements for your project here.',
+        validate: function(input) {
+            if (!input) {
+                return 'Please add your credits/acknowledgements or write N/A'
+            }
+            return true;
+        }
+    }
 ];
 
 // TODO: Create a function to write README file
