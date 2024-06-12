@@ -84,10 +84,14 @@ ${data.description}
 * [Questions](#Questions)
 
 ## Installation
-Please use ${data.dependencies} to install dependencies.
+Installation instructions for application:
+${data.dependencies}
 
 ## Usage
 ${data.usage}
+
+[link](to deployed application - url here)
+![alt text for screenshot](link to screenshot here)
 
 ## License
 ${renderLicenseSection(data.license)}
@@ -99,7 +103,8 @@ ${data.contributions}
 ${data.credits}
 
 ## Tests
-Please use ${data.tests} to run tests.
+To run tests for the application:
+${data.tests}
 
 ## Questions
 Contact me for any questions regarding this project:
