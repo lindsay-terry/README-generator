@@ -22,7 +22,7 @@ Ensure node is installed.  Run npm i in repository folder to install inquirer an
 ## Usage
 To use this project, make sure you have node installed and the repo cloned or forked.  Navigate to the repository folder and run npm i to install dependencies.  Then, run the command node index.js.  The application will run through a series of prompts that must be answered before moving on to the next question.  If you don't answer or provide an insufficient response (the only reponse that is validated for quality of response is the email field), the application will instruct you on what to put or instruct you to type N/A.  After satisfactorily completing all the required fields, the application will generate your completed README file and write it all for you.  Your completed README file will be saved under generatedREADME.md in your repository.  If you made a mistake or wish to answer the questions differently, just run through the process again!  It will overwrite your previous readme so you can change whatever you'd like.
 
-[link](to deployed application - url here)
+[Recording of application demonstration](https://drive.google.com/file/d/179IWEE0icWi9fkstIb490APY-2kVzkwQ/view)
 
 ![Screenshot of application running in console](./assets/images/readme-screenshot.png)
 ![Screenshot of generated README](./assets/images/example-readme.png)
