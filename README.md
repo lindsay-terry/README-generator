@@ -8,12 +8,12 @@ This application runs the user through a series of prompts and comes out with a 
 This project provided challenges and learnings in the form of working with node.  It was quite a mental adjustment to not be able to pop over to a browswer and open the console to figure out why my application wasn't working.  Another challenge I faced was getting the markdown syntax to write correctly and look normal when it got written to the generated file.  I was having an issue trying to over-stringify the answers from the prompts and it was causing my markdown to render in a lump with \n that I didn't write all over the place, and it took a good amount of troubleshooting and adding in extra syntax to discover it was the way I was passing the data into the function all along.  Overall, it was a good experience to work with node and I'm excited to continue to learn more about programming with node and other tools.
 
 ## Table of Contents
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Tests](#Tests)
-* [Questions](#Questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 Installation instructions for application:

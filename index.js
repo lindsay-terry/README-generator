@@ -11,10 +11,7 @@ const questions = [
         name: 'username',
         message: 'Please enter your Github username.',
         validate: function(input) {
-            if (!input) {
-                return 'Please enter a valid Github username'
-            } 
-            return true;
+            return input ? true : 'Please enter a valid Github username.'
         }
     },
 
@@ -23,6 +20,7 @@ const questions = [
         name: 'email',
         message: 'Please enter your email address.',
         validate: function(input) {
+            //this regex tests to see if input is an email address
             const regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
             if (!regex.test(input)) {
                 return 'Please enter a valid email address'
@@ -36,10 +34,7 @@ const questions = [
         name: 'projectName',
         message: 'What is the name of your project?',
         validate: function(input) {
-            if (!input) {
-                return 'Please enter the name of your project.'
-            }
-            return true;
+            return input ? true : 'Please enter the name of your project.'
         }
 
     },
@@ -49,10 +44,7 @@ const questions = [
         name: 'description',
         message: 'Please write a description of your project.',
         validate: function(input) {
-            if (!input) {
-                return 'Please enter a description of your project.'
-            }
-            return true;
+            return input ? true : 'Please enter a description of your project.'
         }
     },
 
@@ -74,10 +66,7 @@ const questions = [
         name: 'dependencies',
         message: 'Instructions to install dependencies?',
         validate: function(input) {
-            if (!input) {
-                return 'Please enter instructions to install dependencies or write N/A.'
-            }
-            return true;
+            return input ? true : 'Please enter instructions to install dependencies or write N/A.'
         }
     },
 
@@ -86,10 +75,7 @@ const questions = [
         name: 'tests',
         message: 'Instructions needed to run tests?',
         validate: function(input) {
-            if (!input) {
-                return 'Please enter the instructions to run tests or write N/A'
-            }
-            return true;
+            return input ? true : 'Please enter the instructions to run tests or write N/A'
         }
     },
 
@@ -98,10 +84,7 @@ const questions = [
         name: 'usage',
         message: 'What does the user need to know about using the project?',
         validate: function(input) {
-            if (!input) {
-                return 'Please enter usage information about your project.'
-            }
-            return true;
+            return input ? true : 'Please enter usage information about your project.'
         }
     },
 
@@ -110,10 +93,7 @@ const questions = [
         name: 'contributions',
         message: 'What does the user need to know about contributing to the project?',
         validate: function(input) {
-            if (!input) {
-                return 'Please include information about contributing to your project or write N/A'
-            }
-            return true;
+            return input ? true : 'Please include information about contributing to your project or write N/A.'
         }
     },
 
@@ -122,10 +102,7 @@ const questions = [
         name: 'credits',
         message: 'Add any credits and acknowledgements for your project here.',
         validate: function(input) {
-            if (!input) {
-                return 'Please add your credits/acknowledgements or write N/A'
-            }
-            return true;
+            return input ? true : 'Please add your credits/acknowledgements or write N/A.'
         }
     }
 ];
@@ -149,8 +126,7 @@ function init() {
     })
     .then(data => {
         return writeToFile('generatedREADME.md', data);
-});
-    
+});  
 }
 
 // Function call to initialize app

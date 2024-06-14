@@ -1,6 +1,6 @@
 
-# Sample Readme
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Sample README
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Description
 This is a sample readme to show the functionality of the application
@@ -16,27 +16,27 @@ This is a sample readme to show the functionality of the application
 
 ## Installation
 Installation instructions for application:
-nmp i
+npm i
 
 ## Usage
-install node and dependencies, enter node index.js and answer prompts.  Answers will be compiled into a professional README
+node index.js to run application
 
 ## License
-This project is operating under the MIT license.  For more detailed information, please click [here](https://opensource.org/license/mit).
+This project is operating under the BSD 3-Clause license.  For more detailed information, please click [here](https://opensource.org/licenses/BSD-3-Clause).
 
 ## Contributing
-Contact me
+see questions section for contact information
 
 ## Credits
-Credits here
+credits go here
 
 ## Tests
 To run tests for the application:
-this app has no tests
+no tests for this application
 
 ## Questions
 Contact me for any questions regarding this project:
 
 GitHub: [lindsay-terry](https://github.com/lindsay-terry)
 
-Email: lindsaytee66@gmail.com
+Email: lindsay@lindsay.com
